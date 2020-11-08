@@ -8,15 +8,19 @@ import {
   Button,
   Typography,
 } from "@material-ui/core";
+import useStyles from "./styles";
 
 const NewsCard = ({
   article: { description, publishedAt, source, title, url, urlToImage },
   i,
 }) => {
+  const classes = useStyles();
+
   return (
     <Card>
       <CardActionArea>
         <CardMedia
+          className={classes.media}
           image={
             urlToImage ||
             "https://png.pngtree.com/png-clipart/20190705/original/pngtree-vector-creative-breaking-news-tag-png-image_4265318.jpg"
