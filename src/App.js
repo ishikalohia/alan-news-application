@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
+import Hero from "./components/Hero";
 
 import NewsCards from "./components/NewsCards/NewsCards";
 
@@ -21,7 +22,7 @@ const App = () => {
   }, []);
   return (
     <div>
-      <h1>Alan React App</h1>
+      <Hero />
       <NewsCards articles={newsArticles} />
     </div>
   );
