@@ -96,6 +96,41 @@ const NewsCards = ({ articles, ActiveArticle }) => {
         alignItems="stretch"
         spacing={3}
       >
+        <Grid item xs={12} sm={3}></Grid>
+        <Grid
+          item
+          xs={12}
+          sm={3}
+          style={{
+            backgroundColor: "#08c399",
+            color: "white",
+            fontFamily: "sans-serif",
+          }}
+        >
+          <center>
+            <h2 style={{ textTransform: "uppercase" }}>Try Saying:</h2>{" "}
+            <h3 style={{ textTransform: "uppercase" }}>Go Back</h3>
+          </center>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={3}
+          style={{
+            backgroundColor: "#08c399",
+            color: "white",
+            fontFamily: "sans-serif",
+          }}
+        >
+          <center>
+            <h2 style={{ textTransform: "uppercase" }}>Try Saying:</h2>{" "}
+            <h3 style={{ textTransform: "uppercase" }}>
+              Open article number 3
+            </h3>{" "}
+          </center>
+        </Grid>
+        <Grid item xs={12} sm={3}></Grid>
+
         {articles.map((article, i) => (
           <Grid item xs={12} sm={6} md={4} lg={3} style={{ display: "flex" }}>
             <NewsCard article={article} ActiveArticle={ActiveArticle} i={i} />
