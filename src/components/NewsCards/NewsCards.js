@@ -34,7 +34,7 @@ const infoCards = [
   },
 ];
 
-const NewsCards = ({ articles }) => {
+const NewsCards = ({ articles, ActiveArticle }) => {
   const classes = useStyles();
 
   if (!articles.length) {
@@ -67,6 +67,7 @@ const NewsCards = ({ articles }) => {
                 </Typography>
                 <img
                   src={infoCard.image}
+                  alt="img"
                   style={{ width: "80%", height: "150px" }}
                 ></img>
                 {infoCard.info ? (
@@ -97,7 +98,7 @@ const NewsCards = ({ articles }) => {
       >
         {articles.map((article, i) => (
           <Grid item xs={12} sm={6} md={4} lg={3} style={{ display: "flex" }}>
-            <NewsCard article={article} i={i} />
+            <NewsCard article={article} ActiveArticle={ActiveArticle} i={i} />
           </Grid>
         ))}
       </Grid>

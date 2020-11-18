@@ -16,7 +16,10 @@ function Hero() {
                 color: "#08c399",
               }}
             >
-              <img src="https://img.icons8.com/pastel-glyph/2x/bullhorn-megaphone--v2.png"></img>
+              <img
+                src="https://img.icons8.com/pastel-glyph/2x/bullhorn-megaphone--v2.png"
+                alt="horn"
+              ></img>
               NEWS APPLICATION
             </h1>
           </center>
